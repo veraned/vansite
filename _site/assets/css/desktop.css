@@ -160,6 +160,26 @@ header.siteHeader {
         -1px -1px 2px rgba(255, 255, 255, 0.5);
 }
 
+header.mobile {
+    background: grey;
+    width: 100%;
+    position: static;
+    height:25px;
+
+    display:flex;
+    justify-content: center;
+}
+
+header.mobile div {
+    display:flex;
+}
+
+header.mobile div img {
+    height:50px;
+}
+
+
+
 /** NAVIGATION **/
 
 nav {
@@ -340,12 +360,31 @@ hr {
     display:flex;
     width: 90%;
     padding:5px;
-    gap:32px;
+    gap:10px;
+}
+
+.contentLeft, .contentMiddle, .contentRight {
+    flex:1;
+}
+
+.contentLeft {
+    text-align: right;
+    order: 1;
+}
+
+.contentMiddle {
+    flex:2;
+    order: 2;
+}
+
+.contentRight {
+    text-align:left;
+    order: 3;
 }
 
 .mainText{
     color:rgb(194, 201, 218);
-    flex: 2.2;
+    flex: 1.7;
     font-size:20px;
     font-weight: 400;
 }
@@ -404,22 +443,6 @@ aside {
     color: rgb(243, 196, 135);
     font-size:19px;
     line-height:18px;
-}
-
-.contentLeft, .contentMiddle, .contentRight {
-    flex:2;
-}
-
-.contentLeft {
-    text-align: right;
-}
-
-.contentMiddle {
-    flex:4;
-}
-
-.contentRight {
-    text-align:left;
 }
 
 footer {
@@ -555,6 +578,7 @@ ul,li{
     align-items: center;
     justify-content: center;
     padding-top:5px;
+    width:360px;
 }
 
 .funnyImages img {
@@ -635,6 +659,10 @@ ul,li{
 
 
 /** BLOG **/
+
+.macroblogs {
+    height:208px;
+}
 
 .otherblogs h2 {
     z-index:10;
@@ -755,14 +783,41 @@ ul,li{
     }    
 
     .contentMain {
-        flex-direction: row;
+        display:flex;
         gap: 16px;
-        align-self:flex-start;
     }
 
     .contentLeft, .contentRight {
-        align-self: flex-end;
-        text-align:right;
+        width: 100%;
+        text-align:left;
+    }
+
+    .handnote {
+        position:absolute;
+    }
+
+    .contentLeft {
+        flex: 1;
+        height:50%;
+        margin-top:0;
+    }
+
+    .contentMiddle {
+        flex: 3;
+        order:1;
+    }
+
+    .contentRight {
+        flex: 1;
+        height:50%;
+        margin-top:auto;
+    }
+
+    .handAsides {
+        display:flex;
+        flex-direction: column;
+        flex:1;
+        order:2;
     }
 
     nav {
