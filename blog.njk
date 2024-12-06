@@ -10,11 +10,19 @@ pagestyle: <style>.otherblogs {display:flex; justify-content:center; align-conte
 <h2 style="margin-top:5px;">Macroblog</h2>
 <section class="macroblogs">
 
-    <article>
-        <h1>contenttitle</h1>
-        <p>a posttime</p>
-        <p>description of content</p>
-    </article>
+    {% for post in collections.blog %}
+        <a href="{{ post.url }}">
+            <article>
+                <h1>{{ post.data.contenttitle }}</h1>
+                <p>{{ post.data.posttime }} minute read posted on {{ post.data.postdate }}<p>{{ post.data.description }}</p>
+            </article>
+        </a>
+    {% endfor %}
+
+            <article>
+                <h1>{{ post.data.contenttitle }}</h1>
+                <p>{{ post.data.posttime }} minute read posted on {{ post.data.postdate }}<p>{{ post.data.description }}</p>
+            </article>
 
 </section>
 

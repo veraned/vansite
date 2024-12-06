@@ -661,7 +661,36 @@ ul,li{
 /** BLOG **/
 
 .macroblogs {
-    height:208px;
+    height:308px;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.macroblogs a {
+    background-color: #d9bb6800;
+}
+
+.macroblogs article {
+    border: 1px solid gold;
+    width: 173px;
+    transform:rotate(-8deg);
+    background-color: rgba(139, 69, 19, 0);
+    height:240px;
+}
+
+.macroblogs article:hover {
+    transform:rotate(-8deg) translateY(-16px);
+}
+
+.macroblogs h1 {
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top:6px;
 }
 
 .otherblogs h2 {
