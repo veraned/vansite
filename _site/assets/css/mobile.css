@@ -1,0 +1,189 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@font-face {
+    font-family: 'P22 Cezanne Regular';
+    src: url('fonts/p22-cezanne-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* MOBILE STUFF */
+
+body, html {
+    height:100vh;
+    margin:0;
+    padding:0;
+    background-color: #271e2b;
+    background-image: url("img/noiz.jpg");
+    background-size: 40%;
+}
+
+main {
+    margin-top:2px;
+    margin-bottom:20px;
+    font-family: "EB Garamond", serif;
+}
+
+/* MAIN STUFF */
+
+
+.contentHeader {
+    display:flex;
+    flex-directioN: column;
+    align-items: center;
+    color: rgb(235, 227, 213);
+}
+
+.contentHeader > h1 {
+	margin-bottom:0;
+    font-family: 'P22 Cezanne Regular', serif;
+    font-size:37px;
+}
+
+.titleCaption {
+	text-transform:uppercase;
+    margin:0;
+    font-size:17px;
+    margin-top:-16px;
+}
+
+.timeDate {
+    margin-top:10px;
+    margin-bottom:0;
+}
+
+.contentWarning {
+    margin-top:3px;
+    margin-bottom:3px;
+}
+
+
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(161, 77, 129, 0.911), rgba(0, 0, 0, 0));
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentMain {
+    display:flex;
+    width: 90%;
+    padding:5px;
+    gap: 14px;
+}
+
+.mainText{
+    color:rgb(253, 202, 202);
+    flex: 2.2;
+    font-size:19px;
+    text-align: justify;
+    font-weight: 400;
+    line-height:21px;
+}
+
+.mainText > h2 {
+    margin-bottom:-10px;
+}
+
+.mainText::first-letter {
+    color:rgb(224, 206, 206);
+    font-size:70px;
+    float:left;
+    padding:20px;
+}
+
+.handNotes {
+    flex: 1;
+    color: rgb(243, 196, 135);
+    font-size:18px;
+    text-align:justify;
+    line-height:18px;
+}
+
+
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    background: rgb(19, 7, 18);
+    padding: 0px;
+    padding-top:6px;
+    padding-bottom:6px;
+    justify-content: center;
+
+    box-shadow: #0008 0px 5px 10px, inset rgba(129, 109, 129, 0.533) 0px 10px 5px;
+}
+
+
+header > h1 {
+    font-size:18px;
+    padding:0;
+    margin:0;
+    text-transform: uppercase;
+}
+
+header > img {
+    width:22px;
+    filter: invert(1);
+    opacity:90%;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom:0;
+    background:rgb(21, 15, 27);
+    padding:10px;
+
+    box-shadow: #0008 0px 5px 10px, inset rgba(139, 64, 123, 0.533) 0px 10px 5px;
+}
+
+
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+}
+
+.navList li {
+    margin-right: 20px;
+}
+
+.navList a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size:17px;
+    text-shadow: #0008;
+}
+
+.desktop {
+    display:none;
+}
+
+@media (min-width: 700px) {
+    body {
+        display:none;
+    }
+}
+

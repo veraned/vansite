@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta sname="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/desktop.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    
+    <title>{{ title }} / Vanillian</title>
+
+    {% if pagestyle %}
+            {{ pagestyle | safe}}
+    {% endif %}
+
+    {% if ezgallery %}
+        <link rel="stylesheet" href="https://unpkg.com/photoviewer@3.6.2/dist/photoviewer.css">
+        <script src="https://unpkg.com/photoviewer@3.6.2/dist/photoviewer.min.js"></script>
+        <script src="/assets/scripts/gallery.js"></script>
+    {% endif %}
+
+</head>
+
+<!--
+
+    ▄   ██      ▄   ▄█ █    █    ▄█ ██      ▄  
+     █  █ █      █  ██ █    █    ██ █ █      █  
+█     █ █▄▄█ ██   █ ██ █    █    ██ █▄▄█ ██   █ 
+ █    █ █  █ █ █  █ ▐█ ███▄ ███▄ ▐█ █  █ █ █  █ 
+  █  █     █ █  █ █  ▐     ▀    ▀ ▐    █ █  █ █ 
+   █▐     █  █   ██                   █  █   ██ 
+   ▐     ▀                           ▀   by veran vanillian
+   
+            enjoy your stay!
+
+-->
+
+<body>
+
+<header class="mobile">
+</header>
+
+<nav>
+    <ul class="navList">
+        <li>
+        <a href="/profile" class="smol {% if page.url == '/profile' %}navActive{% endif %}">profile</a>
+        </li>
+        <li>
+        <a href="/folio" class="{% if page.url == '/folio' %}navActive{% endif %}">portfolio</a>
+        </li>
+        <li>
+        <a href="/anniverse" class="{% if page.url == '/anniverse' %}navActive{% endif %}">anniverse</a>
+        </li>
+        <li>
+        <a href="/blog" class="smol {% if page.url == '/blogpost' %}navActive{% endif %}">blog</a>
+        </li>
+        <li>
+        <a href="/elsewhere" class="{% if page.url == '/elsewhere' %}navActive{% endif %}">elsewhere</a>
+        </li>
+    </ul>
+</nav>
+    
+
+<main>
+
+    <header class="desktop siteHeader">
+    
+        <span id="hexaV">V</span>
+
+        <a id="V" href="/">V</a>
+        
+        <span id="anill">
+        anillian</span>
+
+        <span id="dotCom">{{ title | lower }}</span>
+    </header>
+    
+    {% if precontent %}
+    <p class="precontent {% if justify !== false %}justify{% endif %}">
+    {{ precontent | safe}}
+    </p>
+    {% endif %}
+
+    <header class="contentHeader">
+    <h1 class="fancyTitle">{{ contenttitle | safe }}</h1>
+        {% if titlecaption %}
+        <p class="titleCaption">{{ titlecaption }}</p>
+        {% endif %}
+
+        {% if posttime or postdate or warnings %}
+        <section class="contentData">
+            {% if posttime %}
+            <p class="timeDate">
+                <b>{{ posttime }} minute read</b>
+            {% endif %}
+
+            {% if postdate %}
+            posted on <b>{{ postdate }}</b>
+            </p>
+            {% endif %}
+
+            {% if warnings %}
+            {{ warnings }}
+            {% endif %}
+        </section>
+        {% endif %}
+    </header>
+
+<hr>
+
+<section class="content">
+    <div class="contentMain {% if justify === 'center' %}center{% elif justify === 'justify' %}justify{% endif %}">
+
+        {% if handnotel %}
+        <aside class="contentLeft">
+            {{ handnotel | safe }}
+        </aside>
+        {% endif %}
+
+        {% if content %}
+        <article class="mainText contentMiddle {% if dropcap %}dropCap{% endif %}">
+            {{ content | safe }}
+        </article>
+        {% endif %}
+
+        {% if handnoter %}
+        <aside class="contentRight">
+            {{ handnoter | safe }}
+        </aside>
+        {% endif %}
+
+    </div>
+</section>
+
+{% if postcontent %}
+    <p class="postcontent {% if justify !== false %}justify{% endif %}">
+    {{ postcontent | safe}}
+    </p>
+    {% endif %}
+
+</main>
+
+<footer class="desktop">
+    affectionately © Veran Vanillian
+</footer>
+
+
+</body>
+</html>
