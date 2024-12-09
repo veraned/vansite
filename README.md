@@ -18,6 +18,7 @@ website<br>
 - [ ] rss feed
   - [ ] SOME way to stay connected. i mean dear god
 - [ ] comments (utteranc.es) ❇️
+- [ ] mobile header
 
 
 ### index
@@ -52,8 +53,13 @@ website<br>
 - [ ] microblog markdown -> 11ty integration?
 - [ ] rss feed
 - [ ] fix ezgallery images on posts
-- [x] blog post layout
 - [ ] at least one macro should be ready to go with site launch
+
+### posts
+- [x] layout
+- [ ] ham pronouns
+- [ ] history of a website
+- [ ] my gf is straussian in nature
 
 ### elsewhere
 - [ ] write
