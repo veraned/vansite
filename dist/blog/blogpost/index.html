@@ -1,50 +1,146 @@
----
-layout: "layout.njk"
-title: Truth
-contenttitle: The Truth
-titlecaption: uh-oh
-posttime: a 10
-postdate: November 11th, 2024
-description: The truth about everything.
-handnotel:  |
-    <div class="handnote" style="margin-top:210px;">    <sup>1</sup>whattt 
-    </div>
-    <div class="handnote" style="margin-top:110px;">    <sup>3</sup>whattt 
-    </div>
-handnoter:  |
-    <div class="handnote" style="top:150px;">
-        <sup>2</sup>no way
-    </div>
-dropcap: true
-justify: justify
-pagestyle:  |
-    <style>
-        @media (max-width: 900px) {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta sname="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/desktop.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    
+    <title>Truth / Vanillian</title>
 
-            body {
-            color:red;
-            }
+    
+            <style>
+    @media (max-width: 900px) {
 
-            /* HR 1 */
-                .contentLeft .handnote:nth-child(1){
-                margin-top:0px;
-                } 
-
-            /* HR 2 */
-            .contentRight .handnote:nth-child(1){
-            margin-top:10px;
-            }
-
-            /* HR 3 */
-            .contentLeft .handnote:nth-child(2){
-            margin-top:100px;
-            }
+        body {
+        color:red;
         }
-    </style>
-ezgallery: true
-tags: blog
----
-<p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?”</p>
+
+        /* HR 1 */
+            .contentLeft .handnote:nth-child(1){
+            margin-top:0px;
+            } 
+
+        /* HR 2 */
+        .contentRight .handnote:nth-child(1){
+        margin-top:10px;
+        }
+
+        /* HR 3 */
+        .contentLeft .handnote:nth-child(2){
+        margin-top:100px;
+        }
+    }
+</style>
+
+    
+
+    
+        <link rel="stylesheet" href="https://unpkg.com/photoviewer@3.6.2/dist/photoviewer.css">
+        <script src="https://unpkg.com/photoviewer@3.6.2/dist/photoviewer.min.js"></script>
+        <script src="/assets/scripts/gallery.js"></script>
+    
+
+</head>
+
+<!--
+
+    ▄   ██      ▄   ▄█ █    █    ▄█ ██      ▄  
+     █  █ █      █  ██ █    █    ██ █ █      █  
+█     █ █▄▄█ ██   █ ██ █    █    ██ █▄▄█ ██   █ 
+ █    █ █  █ █ █  █ ▐█ ███▄ ███▄ ▐█ █  █ █ █  █ 
+  █  █     █ █  █ █  ▐     ▀    ▀ ▐    █ █  █ █ 
+   █▐     █  █   ██                   █  █   ██ 
+   ▐     ▀                           ▀   by veran vanillian
+   
+            enjoy your stay!
+
+-->
+
+<body>
+
+<!--<header class="mobile">
+     <div><img src="/assets/img/hexavee.png"></div> 
+</header>-->
+
+<nav>
+    <ul class="navList">
+        <li>
+        <a href="/profile" class="smol ">profile</a>
+        </li>
+        <li>
+        <a href="/folio" class="">portfolio</a>
+        </li>
+        <li>
+        <a href="/anniverse" class="">anniverse</a>
+        </li>
+        <li>
+        <a href="/blog" class="smol ">blog</a>
+        </li>
+        <li>
+        <a href="/elsewhere" class="">elsewhere</a>
+        </li>
+    </ul>
+</nav>
+    
+
+<main>
+
+    <header class="desktop siteHeader">
+    
+        <span id="hexaV">V</span>
+
+        <a id="V" href="/">V</a>
+        
+        <span id="anill">
+        anillian</span>
+
+        <span id="dotCom">truth</span>
+    </header>
+    
+    
+
+    <header class="contentHeader">
+    <h1 class="fancyTitle">The Truth</h1>
+        
+        <p class="titleCaption">uh-oh</p>
+        
+
+        
+        <section class="contentData">
+            
+            <p class="timeDate">
+                <b>a 10 minute read</b>
+            
+
+            
+            posted on <b>November 11th, 2024</b>
+            </p>
+            
+
+            
+        </section>
+        
+    </header>
+
+<hr>
+
+<section class="content">
+    <div class="contentMain justify">
+
+        
+        <aside class="contentLeft desktop">
+            <div class="handnote" style="margin-top:210px;">    <sup>1</sup>whattt 
+</div>
+<div class="handnote" style="margin-top:110px;">    <sup>3</sup>whattt 
+</div>
+
+        </aside>
+        
+
+        
+        <article class="mainText contentMiddle dropCap">
+            <p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?”</p>
 
 <p>So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.</p>
 
@@ -83,3 +179,52 @@ tags: blog
 <p>It was all very well to say “Drink me,” but the wise little Alice was not going to do that in a hurry. “No, I’ll look first,” she said, “and see whether it’s marked ‘poison’ or not”; for she had read several nice little histories about children who had got burnt, and eaten up by wild beasts and other unpleasant things, all because they would not remember the simple rules their friends had taught them: such as, that a red-hot poker will burn you if you hold it too long; and that if you cut your finger very deeply with a knife, it usually bleeds; and she had never forgotten that, if you drink much from a bottle marked “poison,” it is almost certain to disagree with you, sooner or later.</p>
 
 <p>However, this bottle was not marked “poison,” so Alice ventured to taste it, and finding it very nice, (it had, in fact, a sort of mixed flavour of cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast,) she very soon finished it off.</p>
+        </article>
+        
+
+        
+        <aside class="contentRight desktop">
+            <div class="handnote" style="top:150px;">
+    <sup>2</sup>no way
+</div>
+
+        </aside>
+        
+
+        <div class="mobile handAsides">
+
+            
+        <aside class="contentLeft">
+            <div class="handnote" style="margin-top:210px;">    <sup>1</sup>whattt 
+</div>
+<div class="handnote" style="margin-top:110px;">    <sup>3</sup>whattt 
+</div>
+
+        </aside>
+        
+
+        
+        <aside class="contentRight">
+            <div class="handnote" style="top:150px;">
+    <sup>2</sup>no way
+</div>
+
+        </aside>
+        
+
+        </div>
+
+    </div>
+</section>
+
+
+
+</main>
+
+<footer class="desktop">
+    affectionately © Veran Vanillian
+</footer>
+
+
+</body>
+</html>
