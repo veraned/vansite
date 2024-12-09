@@ -53,6 +53,7 @@ website<br>
 - [ ] rss feed
 - [ ] fix ezgallery images on posts
 - [x] blog post layout
+- [ ] at least one macro should be ready to go with site launch
 
 ### elsewhere
 - [ ] write
