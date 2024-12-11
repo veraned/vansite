@@ -1,0 +1,35 @@
+---
+layout: "layout.njk"
+title: WTF
+contenttitle: Four Oh Four
+titlecaption: wherefour art thou content?
+pagestyle: |
+    <style>
+        #faileric {
+        height: 410px;
+        padding-top:20px;
+        margin-bottom: -30px;
+
+        animation: ericfails 0.12s ease-in-out;
+        animation-iteration-count: infinite;
+        transform-origin: bottom center;
+        }
+
+        @keyframes ericfails {
+          0% { transform: rotate(0deg); }
+          25% { transform: rotate(0.5deg); }
+          50% { transform: rotate(1deg); }
+          75% { transform: rotate(0.5eg); }
+          100% { transform: rotate(0deg); }
+        }
+    </style>
+precontent: |
+    <img id="faileric" src="/assets/img/404.png">
+handnotel: "&nbsp;"
+handnoter: "&nbsp;"
+justify: left
+---
+<p>you're clever, ending up somewhere on my website i hadn't accounted for yet. i should honestly be intimidated, but instead...</p>
+<p>i just feel underdressed.</p>
+
+<a href="/" onclick="event.preventDefault(); history.back();" style="display:flex; justify-content: center; align-items: center1;">come back later or get lost</a>

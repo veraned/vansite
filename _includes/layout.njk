@@ -106,7 +106,10 @@
         {% endif %}
     </header>
 
-<hr>
+{% if hr | default(true) %}
+    <hr>
+{% endif %}
+
 
 <section class="content">
     <div class="contentMain {% if justify === 'center' %}center{% elif justify === 'justify' %}justify{% endif %}">
