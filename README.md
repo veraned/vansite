@@ -12,7 +12,6 @@ website<br>
 ### whole site
 - [ ] reorganize css
 - [ ] use 11ty to beautify? (postcss?)
-- [ ] 404 page
 - [ ] every page might need a header image like index rn cuz i like it
 - [ ] find webrings
 - [ ] rss feed
@@ -65,5 +64,6 @@ website<br>
 - [ ] write
 
 ## other pages
+- [x] 404 page
 - [ ] tri.lol
 - [ ] good images ❇️
