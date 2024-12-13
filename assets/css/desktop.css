@@ -57,6 +57,7 @@ body {
     overflow-y: hidden;
 
     background-image: url(/assets/img/dlcbg.png);
+
 }
 
 section, main {
@@ -280,6 +281,8 @@ main {
     max-height: 80%;
     min-height:80%;
 
+    border-left: 4px solid rgb(21, 29, 31);
+    border-right: 4px solid rgb(21, 29, 31);
 
     
 }
@@ -404,7 +407,7 @@ hr {
 
 .mainText{
     color:rgb(209, 214, 224);
-    flex: 2.1;
+    flex: 1.8;
     font-size:21px;
     font-weight: 400;
 }
@@ -416,6 +419,10 @@ h1,h2,h3,h4,h5 {
     font-family:'Satisfy', serif;
     font-weight: 0;
     text-align:left;
+}
+
+h1 {
+    text-align: center;
 }
 
 .mainText p {
@@ -698,36 +705,49 @@ ul,li{
 /** BLOG **/
 
 .macroblogs {
-    height:308px;
-    padding:10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 8px;
-}
-
-.macroblogs a {
-    background-color: #d9bb6800;
+    background-color: rgb(25, 25, 37);
+    display:flex;
+    flex-direction: column;
+    gap:2px;
+    padding-bottom:40px;
 }
 
 .macroblogs article {
-    border: 1px solid gold;
-    width: 173px;
-    transform:rotate(-8deg);
-    background-color: rgba(139, 69, 19, 0);
-    height:240px;
+    background-color: rgb(221, 199, 170);
+    border: solid 6px rgb(116, 82, 60);
+    border-right: solid 3px rgba(0, 0, 255, 0);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding:7px;
+    color:black;
+    transition: transform 0.2s ease-in-out;
 }
 
 .macroblogs article:hover {
-    transform:rotate(-8deg) translateY(-16px);
+    transform: scale(1.12);
 }
 
-.macroblogs h1 {
-    font-size: 26px;
-    padding: 0;
-    margin: 0;
-    margin-top:6px;
+.macroblogs article h2 {
+    color:black;
+    font-family: "EB Garamond", serif;
+    font-size:21px;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom:0;
+    font-variant: small-caps;
+}
+
+.macroblogs p {
+    margin:3px;
+}
+
+.macroDesc {
+    margin: 1px;
+}
+
+.macroData {
+    font-size:17px;
+    font-style: italic;
 }
 
 .otherblogs h2 {
