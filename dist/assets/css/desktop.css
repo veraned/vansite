@@ -567,11 +567,47 @@ Released under the Unlicense - https://unlicense.org/
   }
 }
 
-.indexVertise {
-    width:150px;
-    display:flex;
-    justify-content: left;
-    align-items: right2;
+.vertise {
+    position:relative;
+    border: solid 2px gray;
+    background-color: gray;
+    border-radius:4px;
+    display: inline-block;
+}
+
+.vertise img {
+    max-width:131px;
+}
+
+#vertiseX {
+    opacity:80%;
+    background-color: gray;
+    position:absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 5px;
+    padding-top:0;
+    padding-left:8px;
+    border-bottom-left-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7px;
+    text-align: center;
+}
+
+#vertiseWho {
+    opacity:80%;
+    position:absolute;
+    font-size:13px;
+    bottom:0;
+    margin:0;
+    background-color:grey;
+    color:white;
+    padding:3px;
+    padding-top:0px;
+    padding-bottom:1px;
+
 }
 
 /** PROFILE **/

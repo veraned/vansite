@@ -9,61 +9,67 @@ website<br>
 ## agenda 
 ❇️ - add-on (not needed for mvp)
 
+🕸️ - web design
+🖌️ - art
+✍️ - writing
+🌐 - research
+
 ### whole site
-- [ ] reorganize css
-- [ ] use 11ty to beautify? (postcss?)
-- [ ] every page might need a header image like index rn cuz i like it
-- [ ] find webrings
-- [ ] rss feed
-  - [ ] SOME way to stay connected. i mean dear god
+- [ ] colors & their variables 🕸️
+- [ ] reorganize css 🕸️
+- [ ] use 11ty to beautify? (postcss?) 🕸️
+- [ ] every page might need a header image like index rn cuz i like it 🖌️
+- [ ] find webrings 🌐
+- [x] rss feed (handled if i switch to nekoweb)
+  - [ ] newsletter? SOME way to stay connected. i mean dear god.
 - [ ] comments (utteranc.es) ❇️
-- [ ] mobile header
+- [ ] mobile header 🕸️
 
 
 ### index
-- [ ] write
-- [ ] tri-harder ad (tri.lol)
-- [ ] good images ad (can lead to 404 at first)
-- [ ] introduction copy
-- [ ] updates container
-- [ ] social media links (probably as little icons right before main text)
+- [ ] write ✍️
+- [x] ad layout 
+  - [ ] tri-harder ad (tri.lol)
+  - [ ] good images ad (can lead to 404 at first)
+  - [x] pixel party ad
+- [ ] updates container 🕸️
+- [x] social media links (probably as little icons right before main text)
 
 ### profile
-- [ ] write
-- [ ] fix centering of images on mobile
-- [ ] webserfs
+- [ ] write ✍️
+- [ ] fix centering of images on mobile 🕸️
+- [ ] webserfs 🕸️
 
 ### portfolio
-- [ ] collect artwork
-- [ ] troubleshoot ezgallery
-- [ ] zalgor's lemon (maximize compatibility)
-- [ ] procreate brushes
-- [ ] past projects? do i have enough project history to even have this idk
+- [ ] collect artwork 🌐
+- [ ] troubleshoot ezgallery 🕸️
+- [ ] zalgor's lemon (maximize compatibility) 🕸️
+- [ ] past projects? do i have enough project history to even have this idk 🕸️
 
 ### anniverse
 (first update for tri-harder should be ready to go with site launch)
-- [ ] write
-- [ ] story buttons
+- [ ] write ✍️
+- [ ] story buttons 🕸️
 
 ### blog
-- [ ] placeholder text for when status cafe doesnt load
-- [ ] status cafe style
-- [ ] macroblogs style
-- [ ] microblog markdown -> 11ty integration?
-- [ ] rss feed
-- [ ] fix ezgallery images on posts
-- [ ] at least one macro should be ready to go with site launch
+- [ ] placeholder text for when status cafe doesnt load 🕸️
+- [ ] status cafe style 🕸️
+- [x] macroblogs style
+- [ ] microblog markdown -> 11ty integration? 🕸️
+- [ ] fix ezgallery images on posts 🕸️
+- [ ] at least one macro should be ready to go with site launch ✍️
 
 ### posts
 - [x] layout
-- [ ] ham pronouns
-- [ ] history of a website
-- [ ] my gf is straussian in nature
+- [ ] ham pronouns ✍️
+- [ ] history of a website ✍️
+- [ ] hexavee explanation ✍️
 
 ### elsewhere
-- [ ] write
+- [ ] write ✍️
+- [ ] layout 🕸️
 
 ## other pages
 - [x] 404 page
-- [ ] tri.lol
+- [ ] tri.lol ✍️🕸️
 - [ ] good images ❇️
