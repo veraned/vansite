@@ -9,6 +9,60 @@
     <title>Blog / Vanillian</title>
 
     
+            <style>
+    .nanoblog {
+    width: 200px;
+    height: 250px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:10px;
+    position: relative;
+    }
+
+    .nanoblog::before {
+    content: '';
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 20px solid green;
+    border-bottom: none;
+    }
+
+    #piclog {
+    max-width:190px;
+    margin-top:25px;
+    border-radius: 2px;
+    }
+
+    #statuscafe {
+    max-width:190px;
+    color: black;
+    font-size:20px;
+    text-align: center;
+    background: green;
+    margin-top:0;
+    padding:28px;
+    margin-top:-5px;
+    margin-left:5px;
+    margin-right:5px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius:5%;
+    }
+
+    .microblog {
+    
+    }
+</style>
+
+    
 
     
 
@@ -91,7 +145,11 @@
         
         <aside class="contentLeft desktop">
             <h1>Nanoblog</h1>
-<div style="width: 200px; height: 250px; background-color:tan;"></div>
+<section class="nanoblog">
+    <div id="statuscafe"><div id="statuscafe-content">loading...</div></div><script src="/assets/scripts/statuscafe.js" defer></script>
+
+    <a href="https://piclog.blue/profile.php?id=116"><img src="https://piclog.blue/latest.php?id=116" id="piclog"></a>
+</section>
 
         </aside>
         
@@ -192,7 +250,11 @@
             
         <aside class="contentLeft">
             <h1>Nanoblog</h1>
-<div style="width: 200px; height: 250px; background-color:tan;"></div>
+<section class="nanoblog">
+    <div id="statuscafe"><div id="statuscafe-content">loading...</div></div><script src="/assets/scripts/statuscafe.js" defer></script>
+
+    <a href="https://piclog.blue/profile.php?id=116"><img src="https://piclog.blue/latest.php?id=116" id="piclog"></a>
+</section>
 
         </aside>
         
